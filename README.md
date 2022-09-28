@@ -70,7 +70,7 @@ Pour la création de votre applciation on va utiliser des CDN pour gagner en per
 ####	**CSP**
 
 -------------------- 
-__La partie du CSP que tu as florian__
+__Une Content Security Policy (CSP) ou stratégie de sécurité de contenu a pour but d’améliorer la sécurité des sites web. Pour cela, elle détecte et réduit un certain nombre d’attaques dont les attaques Cross-Site Scripting (XSS) et les injections de code__
 
 --------------------  
 Permettront de maitriser les **requêtes silencieuses**. Elles permettent de demander au navigateur d’émettre des requêtes sans passer par l’exécution de code JavaScript ou CSS. Ce qui est potentiellement dangereux si elles ne sont pas maitrisées. Car elles peuvent aller à la fuite d'information, comme exploiter les failles CRSF, voir des attaques DDoS. 
@@ -83,7 +83,31 @@ On appelle ça du **Clickjacking**. leurs but de créer un site via ce fameux if
 ####	**Cloisonnement des web worker (on a pas ce point je crois part hachemi)**
 ####	**sécurisation des API**
 
-###	**L’entête sécurisé (CORS / http/ HTTPS/ TLS)**
+###	**L’entête sécurisé (CORS / TLS / HTTP / HTTPS)**
+
+#### **SOP: Same origin Policy**
+Dans le but de d’encadrer les origines des requêtes faites à notre application, nous allons mettre en place des règles grâce aux **CORS (Cross origin ressource sharing)**:
+Nous Mettrons en place des Request with Credentials, validant et limitant l’ouverture de notre API.
+
+Cela nous sécurisera des **CSRF (Cross Site Request Forgery)**:
+Qui tente de faire exécuter une requête à l’utilisateur en la cachant dans un formulaire par exemple.
+
+Nous mettrons également en place un protocole **HTTPS** afin de protéger l'intégrité ainsi que la confidentialité des données lors du transfert d'informations entre l'ordinateur de l'internaute et le site.
+
+Nous y parviendrons par le biais des **TLS (Transport Layer Security)**:
+Les données envoyées à l'aide du protocole HTTPS sont sécurisées via le protocole TLS qui offre trois niveaux clés de protection :
+
+- ##### **Le chiffrement** :
+Consiste à coder les données échangées pour les protéger des interceptions illicites.
+
+- ##### **L'intégrité des données** :
+Les informations ne peuvent être ni modifiées, ni corrompues durant leur transfert, que ce soit délibérément ou autrement, sans être détectées.
+
+- ##### **L'authentification** :
+ Prouve que les internautes communiquent avec le bon site Web.
+
+#### **HSTS (HTTP Strict Transport Security)**
+Force le site à n’interagir qu’avec un protocole HTTPS et bloque HTTP.
 
 
 ###	**Le moindre privilège**
