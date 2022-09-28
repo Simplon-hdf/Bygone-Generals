@@ -29,7 +29,7 @@ Le Hashage est à sens unique , et à un but de vérification (concordance des d
 
 voir: Salage 
 
-###_ test de snippet code
+### _test de snippet code_
 
 ```sh
 cd dillinger
