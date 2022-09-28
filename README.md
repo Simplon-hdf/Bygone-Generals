@@ -76,7 +76,9 @@ Pour la création de votre applciation on va utiliser des CDN pour gagner en per
 ####	**CSP**
 Une Content Security Policy (CSP) ou stratégie de sécurité de contenu a pour but d’améliorer la sécurité des sites web. Pour cela, elle détecte et réduit un certain nombre d’attaques dont les attaques Cross-Site Scripting (XSS) et les injections de code
 
---------------------  
+Grâce à la CSP, on va pouvoir restreindre l'accès aux ressources atteignables des domaines ou sous-domaines sous forme d'autorisation.  
+On peut le mettra en place via une configuration du serveur afin d'ajouter un en-tête (header) HTTP Content-Security-Policy aux réponses. Mais pour éviter de toucher au serveur, on pourra le mettre en place via les balises <meta> HTML en lui indiquant les règles qu'on voudra mettre en place.
+
 Permettront de maitriser les **requêtes silencieuses**. Elles permettent de demander au navigateur d’émettre des requêtes sans passer par l’exécution de code JavaScript ou CSS. Ce qui est potentiellement dangereux si elles ne sont pas maitrisées. Car elles peuvent aller à la fuite d'information, comme exploiter les failles CRSF, voir des attaques DDoS. 
   
 #### **X-frame (clickjaking)**
@@ -87,6 +89,7 @@ On appelle ça du **Clickjacking**. leurs but de créer un site via ce fameux if
 ####	**Cloisonnement des web worker (on a pas ce point je crois part hachemi)**
 ####	**sécurisation des API**
 
+-------------------
 ###	**L’entête sécurisé (CORS / TLS / HTTP / HTTPS)**
 
 #### **SOP: Same origin Policy**
@@ -130,3 +133,6 @@ Ca optimisera l’efficacité opérationnelle, protègera les données des risqu
 ###	**Journalisation**
 
 ###	**L’authentification**
+
+-------------------
+## **Source**
