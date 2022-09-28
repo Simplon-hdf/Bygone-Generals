@@ -24,15 +24,21 @@ Brief CDA "Pire2Pire" team Bygone-generals
 ##	**Menaces et objectif des attaques**
 ----------------------------
 ###	**Compromission des ressources**
-
+Cette attaque a pour but de modifier l'intégrité de votre application. Pour ce faire, il va trouver un moyen d'entrer pour modifier une certaine partie de votre application pour changer les donner ou rajouter des informations supplémentaires qui pourront être malveillantes.  
+  
 ###	**Vol de données**
-
+Cette attaque est là pour voler les données (authentifiants, informations personnelles, informations bancaires, etc.). Dans un but souvent lucratif et aboutit la plupart du temps à des usurpations d’identité ou à des paiements frauduleux.  
+  
 ###	**Déni de service**
 
 Envoi massif de requête sur l’application par un réseau d’ordinateur infecté (botnet) dans le but de saturer le service et le rendre inaccessible.
 
 ###	**Point d’eau**
-
+C’est une attaque qui est en général, la plus discrète. Le but est de piéger les utilisateurs qui sont habitués à l'application. Une fois leurs pièges posés. Ils n'auront qu'à attendre un utilisateur tomber au piège pour activer le programme malveillant mit en place.    
+Par exemple:  
+Si on souhaite attaquer un site d'un boulanger, on peut facilement s'assurer que le boulanger visite un site sur un nouveau four à pain en promotion. Alors que ce ne serait qu'un leur pour mettre en place un cheval de Troie sur ça machine. 
+  
+---------------------
 ##	**Développement continue**
 ---------------------
 ##	**Les défense mise en place contre les attaques**
@@ -68,9 +74,7 @@ Mais ceci est une des ataque XSS possible.
 Pour la création de votre applciation on va utiliser des CDN pour gagner en performance et économiser de la bande passante. Cependant cela peu comporter un risque. Si quelqu'un prend le control du CDN, il pourra injecter du contenu malveillant. C'est pour cela que nous allons mettre en place une vérification du contenu pour s'assurer de  l'integrité des fichier télécharger. C'est ce qu'on appelle le **RSI** (Subresource Integrity). Grace a un haschage spécifier, il ira vérifier que le contenue télécharger sera identique a ceux qui est attendu. Si le haschage est diférent alors il bloquera le contenu. 
   
 ####	**CSP**
-
--------------------- 
-__Une Content Security Policy (CSP) ou stratégie de sécurité de contenu a pour but d’améliorer la sécurité des sites web. Pour cela, elle détecte et réduit un certain nombre d’attaques dont les attaques Cross-Site Scripting (XSS) et les injections de code__
+Une Content Security Policy (CSP) ou stratégie de sécurité de contenu a pour but d’améliorer la sécurité des sites web. Pour cela, elle détecte et réduit un certain nombre d’attaques dont les attaques Cross-Site Scripting (XSS) et les injections de code
 
 --------------------  
 Permettront de maitriser les **requêtes silencieuses**. Elles permettent de demander au navigateur d’émettre des requêtes sans passer par l’exécution de code JavaScript ou CSS. Ce qui est potentiellement dangereux si elles ne sont pas maitrisées. Car elles peuvent aller à la fuite d'information, comme exploiter les failles CRSF, voir des attaques DDoS. 
