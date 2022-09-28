@@ -159,6 +159,7 @@ Ce qui incite la platefrome a mettre en place une stratégie de sécurité adapt
 
 ### **Stratégie de sauvegarde**
 
+
 La plateforme doit adopter une stratégie de sauvegarde de ce fait, il a une certaine stratégie à adopter, notamment « la sauvegarde 3-2-1 », qui repose sur trois règles :
 
 * Trois copies de données : ce lot de copies comporte les données originales que l’on souhaite sécuriser, et au minimum deux sauvegardes.
