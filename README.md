@@ -29,6 +29,8 @@ Brief CDA "Pire2Pire" team Bygone-generals
 
 ###	**Déni de service**
 
+Envoi massif de requête sur l’application par un réseau d’ordinateur infecté (botnet) dans le but de saturer le service et le rendre inaccessible.
+
 ###	**Point d’eau**
 
 ##	**Développement continue**
@@ -36,6 +38,13 @@ Brief CDA "Pire2Pire" team Bygone-generals
 ##	**Les défense mise en place contre les attaques**
 ---------------------
 ### **La défense en profondeur**
+
+#### **DDOS Attack**
+
+Pour identifier efficacement toute tentative d’attaque DDOS, nous allons analyser le traffic afin de détecter les activités suspectes.
+Nous pouvons également stocker nos données et services sur des serveurs différents afin d’éviter la saturation complète des services.
+De plus, nous pouvons utiliser un limiteur de traffic pour éviter les requêtes trop fréquentes.
+
 #### **Les injections**
 Nous allons mettre en place le moyen de vous proteger contre les ataque de type d'injection.
   
