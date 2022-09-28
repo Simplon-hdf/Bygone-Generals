@@ -6,7 +6,7 @@ Brief CDA "Pire2Pire" team Bygone-generals
 2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)  
    2.1. [Compromission des ressources](#compromission-des-ressources)  
    2.2. [Vol de données](#vol-de-données)  
-   2.3. [Déni de service](#déni-de-service)
+   2.3. [Déni de service](#déni-de-service)  
    2.4. [Point d’eau](#point-deau)
 3. [Développement continue](#développement-continue)
 4. [Les défense mise en place contre les attaques](#les-défense-mise-en-place-contre-les-attaques)  
@@ -66,7 +66,7 @@ __La partie du CSP que tu as florian__
 --------------------  
 Permettront de maitriser les **requêtes silencieuses**. Elles permettent de demander au navigateur d’émettre des requêtes sans passer par l’exécution de code JavaScript ou CSS. Ce qui est potentiellement dangereux si elles ne sont pas maitrisées. Car elles peuvent aller à la fuite d'information, comme exploiter les failles CRSF, voir des attaques DDoS. 
   
-#### **Xframe (clickjaking)**
+#### **X-frame (clickjaking)**
 Vu que l'application contiens des cours privé, que seul des personnes inscrit chez vous pourrons suivre. On va mettre en place un x-frame. Le but et de vous proteger des copie frauduleux de votre site par un iframe.
 On appelle ça du **Clickjacking**. leurs but de créer un site via ce fameux iframe qui est une fenetre dans un site qui pointe vers votre application. Il l'utilise pour cacher des bouton ou rajouter des bouton pour inciter les utilisateur a cliquer. Une fois fait, ça lancera un script qui provoqueront des actions qui ce feront à leurs insu. Pour les proteger,  on mettra une options "X-Frame-Options: deny". Cela empechera la page d'être utiliser dans un iframe. Il sera possible de modifier ce parametre, si on s'apercoit lors de la mise en place de votre application qu'on a besoin de faire un iframe. On mettra un paramettre qui permetra seulement à votre domaine, ou une page bien précis l'autorisation d'utiliser un iframe.
   
@@ -85,7 +85,7 @@ On éliminera les privilèges d’administrateur local inutiles et s’assurer q
 Pour faciliter la mise en place des droits pour chaque utilisateur, nous allons appliquer la méthode **RBAC** (Role based Access Control).
 Nous allons créer des rôles avec des autorisations, droits. Pour faciliter la gestion des utilisateurs en compartimentant les accès donnés, que cette personne pourra atteindre. Ce qui fera une couche de sécurité sur les accès donnée. L'avantage supplémentaire est de gagner du temps par la suite, pour éviter de devoir attribuer des droits l'un après l'autre à chaque apprenant, formateur ou employer. Il suffira d'attribuer les rôles aux personnes qui pourront être modifiées. 
 Ca optimisera l’efficacité opérationnelle, protègera les données des risques de fuite ou de vol, réduit le travail d’administration et d’assistance informatique.
-
+  
 ###	**La politique RGPD**
 
 ###	**Stratégie de sauvegarde**
