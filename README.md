@@ -4,21 +4,22 @@ Brief CDA "Pire2Pire" team Bygone-generals
 
 ## Table des mattiere
 
+## Table des mattiere
 1. [Intro](#Intro)
-2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)
-2.1. [Compromission des ressources](#compromission-des-ressources)
-2.2. [Vol de données](#vol-de-donn%C3%A9es)
-2.3. [Déni de service](#d%C3%A9ni-de-service)
-2.4. [Point d’eau](#point-deau)
-3. [Développement continue](#d%C3%A9veloppement-continue)
-4. [Les défense mise en place contre les attaques](#les-d%C3%A9fense-mise-en-place-contre-les-attaques)
-4.1. [La défense en profondeur](#la-d%C3%A9fense-en-profondeur)
-4.2. [L’entête sécurisé (CORS / http/ HTTPS/ TLS)](#lent%C3%AAte-s%C3%A9curis%C3%A9-cors--http-https-tls)
-4.3. [Le moindre privilège](#le-moindre-privil%C3%A8ge)
-4.4. [La politique RGPD](#la-politique-rgpd)
-4.5. [Stratégie de sauvegarde](#strat%C3%A9gie-de-sauvegarde)
-4.6. [Journalisation](#journalisation)
-4.7. [L’authentification](#lauthentification)
+2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)  
+   2.1. [Compromission des ressources](#compromission-des-ressources)  
+   2.2. [Vol de données](#vol-de-données)  
+   2.3. [Déni de service](#déni-de-service)  
+   2.4. [Point d’eau](#point-deau)
+3. [Développement continue](#développement-continue)
+4. [Les défense mise en place contre les attaques](#les-défense-mise-en-place-contre-les-attaques)  
+  4.1. [La défense en profondeur](#la-défense-en-profondeur)  
+  4.2. [L’entête sécurisé (CORS / http/ HTTPS/ TLS)](#lentête-sécurisé-cors--tls--http--https)  
+  4.3. [Le moindre privilège](#le-moindre-privilège)  
+  4.4. [La politique RGPD](#la-politique-rgpd)  
+  4.5. [Stratégie de sauvegarde](#stratégie-de-sauvegarde)  
+  4.6. [Journalisation](#journalisation)  
+  4.7. [L’authentification](#lauthentification)  
 5. [Source](#source)
 
 
@@ -76,7 +77,7 @@ Si un de vos apprenant est mal intentionné. Il pourrai mettre en commentaire à
 En faisant la méthode expliquer un peu plus haut, ce type d'ataque sera arreté.
 Mais ceci est une des ataque XSS possible.
 
-#### RSI
+ #### **RSI**
 
 Pour la création de votre applciation on va utiliser des CDN pour gagner en performance et économiser de la bande passante. Cependant cela peu comporter un risque. Si quelqu'un prend le control du CDN, il pourra injecter du contenu malveillant. C'est pour cela que nous allons mettre en place une vérification du contenu pour s'assurer de  l'integrité des fichier télécharger. C'est ce qu'on appelle le **RSI** (Subresource Integrity). Grace a un haschage spécifier, il ira vérifier que le contenue télécharger sera identique a ceux qui est attendu. Si le haschage est diférent alors il bloquera le contenu. 
   
