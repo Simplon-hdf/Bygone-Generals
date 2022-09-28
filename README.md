@@ -165,6 +165,7 @@ La plateforme doit adopter une stratégie de sauvegarde de ce fait, il a une cer
 
 ### **Journalisation**
 
+La journalisation est un élément primordial pour assurer la sécurité des traitements de données, qui est obligation posée par l’article 5 du RGPD. Dans notre cas « les fichiers journaux ou logs » enregistre les accès des utilisateurs en incluant leurs identifiants, la date et l’heure de leur connexion et de leur déconnexion.
 
 ###	**L’authentification**
 
