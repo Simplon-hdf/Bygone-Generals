@@ -108,3 +108,35 @@ https://www.cyberark.com/fr/what-is/least-privilege/
 
 Le **RGPD** est une règlementation européenne obligatoire qui refond et renforce les droits et la protection des données à caractère personnel des personnes physiques. Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.
 
+
+## Vol de donnée : 
+
+Une violation de la sécurité se caractérise par la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles données, de manière accidentelle ou illicite.
+
+## Journalisation : 
+
+Les journaux d’événements constituent une brique technique indispensable à la gestion de la sécurité des systèmes d’information. L’activité de journalisation est un moyen de détection des incidents de sécurité et d’analyse du comportement d’un site ou d’une application web. Cette activité concerne la phase de conception de l’application, pour la génération de journaux (ex. traçabiltié d’un changement de privilèges) 
+
+## Stratégie de sauvegarde : 
+
+Une stratégie de sauvegarde est un plan conçu pour garantir que les données essentielles de l'entreprise sont sauvegardées et prêtes à être restaurées en cas de perte de données.
+
+## Audit (PASSI) : 
+
+Prestataires d’audit de la sécurité des systèmes d’information qualifiés .
+
+## Bug Bounty : 
+
+Événements organisés par une infrastructure permettant à des développeurs de tester la sécurité de leurs applications (White hacker).
+
+## Cookies : 
+
+Les cookies sont des fichiers texte contenant de petits éléments de données, comme un nom d'utilisateur et un mot de passe, qui sont utilisés pour identifier votre ordinateur lorsque vous utilisez un réseau informatique. Des cookies spécifiques appelés cookies HTTP sont utilisés pour identifier des utilisateurs spécifiques et améliorer votre expérience de navigation sur le Web.
+Les données stockées dans un cookie sont créées par le serveur lors de votre connexion. Ces données sont étiquetées avec un identifiant unique pour vous et votre ordinateur.
+Lorsque le cookie est échangé entre votre ordinateur et le serveur du réseau, le serveur lit l'identifiant et sait quelles informations vous fournir spécifiquement.
+
+## Sanitization : 
+
+est l’action de nettoyé, dans le sens ou elle permet de mettre en place un filtre afin de traiter les informations reçues et afin de voir si elle corresponde plus au moins au résultat attendu.
+Dans le cas d’un formulaire d’inscription, la sanitarization met un filtre afin de vérifier que dans le champs email, il s’agit bel et bien d’un email entré dans le champ.
+
