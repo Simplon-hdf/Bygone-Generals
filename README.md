@@ -165,7 +165,17 @@ La plateforme doit adopter une stratégie de sauvegarde de ce fait, il a une cer
 
 ### **Journalisation**
 
-La journalisation est un élément primordial pour assurer la sécurité des traitements de données, qui est obligation posée par l’article 5 du RGPD. Dans notre cas « les fichiers journaux ou logs » enregistre les accès des utilisateurs en incluant leurs identifiants, la date et l’heure de leur connexion et de leur déconnexion.
+La journalisation est un élément primordial pour assurer la sécurité des traitements de données, qui est obligation posée par l’article 5 du RGPD. 
+Il est nécessaire d’avoir un système de journalisation (c’est-à-dire un enregistrement dans des « fichiers journaux » ou « logs ») des activités des utilisateurs, des anomalies et des événements liés à la sécurité. Ces journaux doivent conserver les évènements sur une période glissante ne pouvant excéder six mois (sauf obligation légale, ou risque particulièrement important) :
+- La journalisation doit concerner, au minimum, les accès des utilisateurs en incluant leur identifiant, la date et l’heure de leur connexion, et la date et l’heure de leur déconnexion.
+- Dans certains cas, il peut être nécessaire de conserver également le détail des actions effectuées par l’utilisateur, les types de données consultées et la référence de l’enregistrement concerné.
+- Informer les utilisateurs de la mise en place d’un tel système, après information et consultation des représentants du personnel.
+- Protéger les équipements de journalisation et les informations journalisées contre les accès non autorisés, notamment en les rendant inaccessibles aux personnes dont l’activité est journalisée.
+- Établir des procédures détaillant la surveillance de l’utilisation du traitement et examiner périodiquement les journaux d’événements pour y détecter d’éventuelles anomalies.
+- Assurer que les gestionnaires du dispositif de gestion des traces notifient, dans les plus brefs délais, toute anomalie ou tout incident de sécurité au responsable de traitement.
+- Notifier toute violation de données à caractére personnel à la CNIL et, sauf exception prévue par le RGPD, aux personnes concernées pour qu’elles puissent en limiter les conséquences
+
+
 
 ###	**L’authentification**
 
