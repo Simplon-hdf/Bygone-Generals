@@ -3,13 +3,13 @@ Brief CDA "Pire2Pire" team Bygone-generals
 
 ## Table des mattiere
 1. [Intro](#Intro)
-2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)
+2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)  
    2.1. [Compromission des ressources](#compromission-des-ressources)  
-   2.2. [Vol de données](#vol-de-données)
+   2.2. [Vol de données](#vol-de-données)  
    2.3. [Déni de service](#déni-de-service)
    2.4. [Point d’eau](#point-deau)
 3. [Développement continue](#développement-continue)
-4. [Les défense mise en place contre les attaques](#les-défense-mise-en-place-contre-les-attaques)
+4. [Les défense mise en place contre les attaques](#les-défense-mise-en-place-contre-les-attaques)  
   4.1. [La défense en profondeur](#la-défense-en-profondeur)  
   4.2. [L’entête sécurisé (CORS / http/ HTTPS/ TLS)](#lentête-sécurisé-cors--http-https-tls)  
   4.3. [Le moindre privilège](#le-moindre-privilège)  
@@ -19,37 +19,56 @@ Brief CDA "Pire2Pire" team Bygone-generals
   4.7. [L’authentification](#lauthentification)  
 5. [Source](#source)
 
-##	Intro
+##	**Intro**
+------------------------------------
+##	**Menaces et objectif des attaques**
+----------------------------
+###	**Compromission des ressources**
 
-##	Menaces et objectif des attaques
+###	**Vol de données**
 
-###	Compromission des ressources
+###	**Déni de service**
 
-###	Vol de données
+###	**Point d’eau**
 
-###	Déni de service
+##	**Développement continue**
+---------------------
+##	**Les défense mise en place contre les attaques**
+---------------------
+### **La défense en profondeur**
+#### **Les injections**
+Nous allons mettre en place le moyen de vous proteger contre les ataque de type d'injection.
 
-###	Point d’eau
+Sur chaque entréer (un champs ou un utilisateur va marquer une donnée) effectuer par un utilisateur on va vérifier, filtrer, et effectuer un échappement de caractères, pour vérifier de l'integrité de la données.
+A cela on rajoutera les bonne pratique utiliser dans le language back choisi pour proteger la requete et les donnée qui s'y trouve pour l'integreté de votre base de donnée.
 
-##	Développement continue
+Avec cette méthode cela vous protegera contre ces deux type d'injection le SQLi et le XSS stockées
 
-##	Les défense mise en place contre les attaques
+- ##### **SQLi**
+Il s'agit d'attaques visant la base de données. Les moyens d'entrés sont tous simplement les différentes requête utiliser pour communiquer entre la base de données et l'utilisateur. Et au vu de l'application il y aura beaucoup de requete que des utilisateurs pourront effectuer.
+Le problème de ces ataques, c'est s'il arrive a entréer dedans les hacker pourront lire, altérer ou détruire la base de données.
 
-### La défense en profondeur
--	CSP
--	Xframe (clickjaking)
-- Précaution d’usage des cookie
--	Cloisonnement des web worker (on a pas ce point je crois part hachemi)
--	sécurisation des API
+- ##### **XSS**
+Cross-Site Scripting est une attaque qui permet d'injecter des donnés dans une page web qui va l'interpréter. Elle est de forme HTML ou JavaScript. Elle est implémenté dans les application grâce à une entrée (exemple une zone commentaire).
+Ce type d'ataque est prévue pour visée les utilisateurs qui viendront sur votre application et notre votre application en elle même.
+Si un de vos apprenant est mal intentionné. Il pourrai mettre en commentaire à un de vos cours un script qui pourra recuperer par exemple des cookies de connecxion d'utilisateur qui arrivera dans la page car le navigateur interpretera le commentaire et effectura le script.
+En faisant la méthode expliquer un peu plus haut, ce type d'ataque sera arreté.
+Mais ceci est une des ataque XSS possible.
 
-###	L’entête sécurisé (CORS / http/ HTTPS/ TLS)
+####	**CSP**
+#### **Xframe (clickjaking)**
+#### **Précaution d’usage des cookie**
+####	**Cloisonnement des web worker (on a pas ce point je crois part hachemi)**
+####	**sécurisation des API**
 
-###	Le moindre privilège
+###	**L’entête sécurisé (CORS / http/ HTTPS/ TLS)**
 
-###	La politique RGPD
+###	**Le moindre privilège**
 
-###	Stratégie de sauvegarde
+###	**La politique RGPD**
 
-###	Journalisation
+###	**Stratégie de sauvegarde**
 
-###	L’authentification
+###	**Journalisation**
+
+###	**L’authentification**
