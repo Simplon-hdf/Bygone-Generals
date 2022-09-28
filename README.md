@@ -144,20 +144,26 @@ Nous allons créer des rôles avec des autorisations, droits. Pour faciliter la 
 Ca optimisera l’efficacité opérationnelle, protègera les données des risques de fuite ou de vol, réduit le travail d’administration et d’assistance informatique.
 
 ### **La politique RGPD**
-<br>
+
 Une plateforme comme la vôtre est une cible majeure contre les **attaques malveillantes**, donc elle doit se protéger davantage.
 
-La plateforme de formation en ligne présente des données à caractère personnel de ses utilisateurs et ainsi doit obligatoirement respecter le **Règlement Général sur la Protection des Données** (RGPD), qui établie des règles sur la collecte et l’utilisation des données de l'utilisateur. 
+La plateforme de formation en ligne présente des données à caractère personnel de ses utilisateurs et ainsi doit obligatoirement respecter le **Règlement Général sur la Protection des Données** (RGPD), qui établie des règles sur la collecte et l’utilisation des données de l'utilisateur.
 Il a été conçu autour de 3 objectifs :
 
-- renforcer les droits des personnes
-- responsabiliser les acteurs traitant des données
-- crédibiliser la régulation grâce à une coopération renforcée entre les autorités de protection des données
+* renforcer les droits des personnes
+* responsabiliser les acteurs traitant des données
+* crédibiliser la régulation grâce à une coopération renforcée entre les autorités de protection des données
 
-Ainsi évité le vol de données en respectant toutes les recommandations citées ci-dessus. 
-Ce qui insite à la platefrome de mettre en place une stratégie de sécurité adaptée.
+Ainsi évité le vol de données en respectant toutes les recommandations citées ci-dessus.
+Ce qui incite la platefrome a mettre en place une stratégie de sécurité adaptée.
 
 ### **Stratégie de sauvegarde**
+
+La plateforme doit adopter une stratégie de sauvegarde de ce fait, il a une certaine stratégie à adopter, notamment « la sauvegarde 3-2-1 », qui repose sur trois règles :
+
+* Trois copies de données : ce lot de copies comporte les données originales que l’on souhaite sécuriser, et au minimum deux sauvegardes.
+* Deux types de stockage différents : les deux copies de données sauvegardées doivent être conservées sur deux supports de stockage distincts. Cela permet de minimiser les risques de défaillance qui pourraient potentiellement survenir sur un support unique. On peut retrouver parmi les différents type de stockage : un disque dur interne, un disque dur externe, une bande magnétique, une clé USB ou encore une sauvegarde dans le cloud.
+* Une copie hors site : il est impératif de conserver au moins, une copie des données en dehors de la plateforme. En effet, nul n’est à l’abri d’un sinistre (inondation, incendie, tempête, court-circuit…), d’un acte de malveillance (cyberattaque, ransomware…) ou encore d’une erreur humaine.
 
 ### **Journalisation**
 
