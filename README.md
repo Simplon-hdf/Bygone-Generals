@@ -95,7 +95,9 @@ Permettront de maitriser les **requêtes silencieuses**. Elles permettent de dem
 Vu que l'application contiens des cours privé, que seul des personnes inscrit chez vous pourrons suivre. On va mettre en place un x-frame. Le but et de vous proteger des copie frauduleux de votre site par un iframe.
 On appelle ça du **Clickjacking**. leurs but de créer un site via ce fameux iframe qui est une fenetre dans un site qui pointe vers votre application. Il l'utilise pour cacher des bouton ou rajouter des bouton pour inciter les utilisateur a cliquer. Une fois fait, ça lancera un script qui provoqueront des actions qui ce feront à leurs insu. Pour les proteger, on mettra une options "X-Frame-Options: deny". Cela empechera la page d'être utiliser dans un iframe. Il sera possible de modifier ce parametre, si on s'apercoit lors de la mise en place de votre application qu'on a besoin de faire un iframe. On mettra un paramettre qui permetra seulement à votre domaine, ou une page bien précis l'autorisation d'utiliser un iframe.
 
--------------------------
+Quant à eux, les cookies ont de multiples usages : ils peuvent servir dans notre cas à la gestion des sessions, c’est-à-dire que l’utilisateur n’est pas forcément obligé de se connecter régulièrement, la personnalisation, c’est-à-dire les préférences de l’utilisateur, le thème et autres paramètres et enfin enregistrer et analyser le comportement des utilisateurs, afin de déterminer un comportement anormal.
+
+---------------------------
 
 ### **L’entête sécurisé (CORS / TLS / HTTP / HTTPS)**
 
@@ -190,3 +192,12 @@ Il est nécessaire d’avoir un système de journalisation (c’est-à-dire un e
 https://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf  
 
 https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/#:~:text=Privilégier%20l%27utilisation%20de%20l,fort%20de%20mots%20de%20passe.  
+
+https://www.cnil.fr/fr/definition/cookie
+
+
+https://www.economie.gouv.fr/entreprises/reglement-general-sur-protection-des-donnees-rgpd
+
+
+https://www.associations.gouv.fr/IMG/pdf/fiche_pratique_rgpd.pdf
+
