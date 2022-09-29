@@ -191,7 +191,7 @@ Ce rapport traite des stratégies de sécurité à mettre en place concernant l'
 
 ### Politique de gestion des facteurs Auth, focus sur l'User
 
-La stratégie d'autorisations reposera sur 4 rôles séparés au minimum :
+La stratégie d'autorisations reposera sur 5 rôles séparés au minimum :
 
     -low-privilege (simple visiteur)
     -user (utilisateur enregistré et authentifié)
@@ -246,11 +246,14 @@ Les Teachers auront des autorisations de modification de leur espace "créateur"
 ### A propos des Admins
 
 Tout les logins spéciaux de tâches d’administration seront :
+
 	-chiffrés avec une clef synchrone changeante régulièrement en entreprise, les employés 	devront changer leur mot de passe crypté régulièrement.
 
 A terme, et afin de faciliter le travail constant des equipes, sans compromettre la sécurité des accès sensibles, nous recommandons la mise en place d'une sécurité multi facteurs avec facteurs physiques du type:
+
     1 Badge + mot de passe fort sur des machines dédiées
     2 Biométrie + badge + mot de passe fort sur des machines dédiées
+    
 de changer constament le facteur "badge" qui sera remis en main propre aux employés acrédités toute les deux semaines par exemple.
 
 
