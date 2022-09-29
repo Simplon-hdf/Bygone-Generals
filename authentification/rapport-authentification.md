@@ -25,7 +25,8 @@ L'authentification multi-facteur tendant à se démocratiser, et ajoutant une co
 	    -numériques+alphabétique+caractères spéciaux(1 minimum de chaque)
 	    -pas de suites logiques de nombre (456789)
 	    -pas plus de 2 caractères semblables à la suite (aaa – 222)
-        note: bien que l'ANSI recommande un mot de passe le plus long possible une limite maximale arbitraire de 
+        
+	note: bien que l'ANSI recommande un mot de passe le plus long possible une limite maximale arbitraire de 
 	50 caractères sera mise en place,afin de limiter en première intention dans cette couche,
 	l'impact des attaques DDOS.
 
@@ -47,7 +48,7 @@ Afin d'habituer l'Utilisateur à gérer sa sécurité de compte, tout en amélio
 
 Les Users n'auront que des privilèges de consultation, et de modification de leurs paramètres personnels d'ergonomie/de compte client.
 
-### concernant les formateurs
+### Concernant les formateurs
 
 Au vu des privilèges plus élevés des Teachers, ceux-ci devront, en plus des mesures relatives aux Users, IMPERATIVEMENT utiliser une authentification à double facteur,
 et fournir un numéro de téléphone vérifié (dans le respect des RGPD et sans aucun but commercial)
