@@ -22,7 +22,16 @@ Brief CDA "Pire2Pire" team Bygone-generals
 
 -----------------------------
 ##	**Intro**
-------------------------------------
+
+" Good afternoon to everyone,
+
+First-of-all, Thank you for choosing Bygone-General Limited to develop your e-learning platform.
+
+During this meeting, we will talk about the security aspect of the project. 
+As you know, it is important to ensure the security of the data we collect to assure the privacy of the user. And also to avoid any attack or hacking we could possibly face.
+
+We will now switch to French to explain the different security strategies included in this development."
+
 ##	**Menaces et objectif des attaques**
 ----------------------------
 ###	**Compromission des ressources**
