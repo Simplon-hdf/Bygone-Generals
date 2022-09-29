@@ -192,9 +192,11 @@ Ce rapport traite des stratégies de sécurité à mettre en place concernant l'
 ### Politique de gestion des facteurs Auth, focus sur l'User
 
 La stratégie d'autorisations reposera sur 4 rôles séparés au minimum :
+
     -low-privilege (simple visiteur)
     -user (utilisateur enregistré et authentifié)
     -teacher (formateurs)
+    -moderators (modérateurs)
     -admins (administrateurs/debug/dev team)
 
 L'ANSI recommande evidemment un mot de passe fort, mais aussi que celui-ci ne soit pas trop contraignant pour l'utilisateur, afin de l'inciter à retenir plusieurs mots de passe usuels,pratiques et fort lui-même.
