@@ -247,7 +247,8 @@ Les Teachers auront des autorisations de modification de leur espace "créateur"
 
 Tout les logins spéciaux de tâches d’administration seront :
 
-	-chiffrés avec une clef synchrone changeante régulièrement en entreprise, les employés 	devront changer leur mot de passe crypté régulièrement.
+	-chiffrés avec une clef synchrone changeante régulièrement en entreprise, 
+	les employés 	devront changer leur mot de passe crypté régulièrement.
 
 A terme, et afin de faciliter le travail constant des equipes, sans compromettre la sécurité des accès sensibles, nous recommandons la mise en place d'une sécurité multi facteurs avec facteurs physiques du type:
 
