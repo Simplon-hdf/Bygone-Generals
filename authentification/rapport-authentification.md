@@ -15,7 +15,8 @@ L'ANSI recommande evidemment un mot de passe fort, mais aussi que celui-ci ne so
 L'authentification multi-facteur tendant à se démocratiser, et ajoutant une couche d'authentification multi-composante supplémentaire( différent types de FACTEURS ), notre politique envers les utilisateurs sera donc:
 
     -rappel constant des règles de sécurité(phishing, communication avec employés etc)
-    -proposer et encourager la pratique de la double authentification avec des solutions de tokens temporaires telles que : Authy , Google authenticator, etc.
+    -proposer et encourager la pratique de la double authentification avec des solutions de tokens temporaires telles que:
+    Authy , Google authenticator, etc.
     -rendre l'authentification multi-facteur OBLIGATOIRE pour les formateurs
     -limiter les essais consecutifs d'authentification
     -A l’inscription : vérification d’e mail 
@@ -24,7 +25,10 @@ L'authentification multi-facteur tendant à se démocratiser, et ajoutant une co
 	    -numériques+alphabétique+caractères spéciaux(1 minimum de chaque)
 	    -pas de suites logiques de nombre (456789)
 	    -pas plus de 2 caractères semblables à la suite (aaa – 222)
-        note: bien que l'ANSI recommande un mot de passe le plus long possible une limite maximale arbitraire de 50 caractères sera mise en place, afin de limiter en première intention dans cette couche, l'impact des attaques DDOS.
+        
+	note: bien que l'ANSI recommande un mot de passe le plus long possible une limite maximale arbitraire de 
+	50 caractères sera mise en place,afin de limiter en première intention dans cette couche,
+	l'impact des attaques DDOS.
 
 A l’inscription, le mot de passe utilisateur subira un Hachage SHA256 du mdp utilisateur avec un salage fort et UNIQUE, il n'y aura donc aucun mot de passe stocké en textuel sur nos serveurs, afin de miniser l'exploitabilité de la couche Data.
 Cette décision implique l'absence de possibilité de RECUPERATION de mot de passe, et la mise en place d'un système de REINITIALISATION de mot de passe.
@@ -44,7 +48,7 @@ Afin d'habituer l'Utilisateur à gérer sa sécurité de compte, tout en amélio
 
 Les Users n'auront que des privilèges de consultation, et de modification de leurs paramètres personnels d'ergonomie/de compte client.
 
-### concernant les formateurs
+### Concernant les formateurs
 
 Au vu des privilèges plus élevés des Teachers, ceux-ci devront, en plus des mesures relatives aux Users, IMPERATIVEMENT utiliser une authentification à double facteur,
 et fournir un numéro de téléphone vérifié (dans le respect des RGPD et sans aucun but commercial)
