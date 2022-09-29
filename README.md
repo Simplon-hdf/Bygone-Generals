@@ -3,8 +3,6 @@
 Brief CDA "Pire2Pire" team Bygone-generals
 
 ## Table des mattiere
-
-## Table des mattiere
 1. [Intro](#Intro)
 2. [Menaces et objectif des attaques](#menaces-et-objectif-des-attaques)  
    2.1. [Compromission des ressources](#compromission-des-ressources)  
@@ -22,7 +20,7 @@ Brief CDA "Pire2Pire" team Bygone-generals
   4.7. [L’authentification](#lauthentification)  
 5. [Source](#source)
 
-
+-----------------------------
 ##	**Intro**
 ------------------------------------
 ##	**Menaces et objectif des attaques**
@@ -44,9 +42,12 @@ Si on souhaite attaquer un site d'un boulanger, on peut facilement s'assurer que
   
 ---------------------
 ##	**Développement continue**
+----------------------
+Nous allons mettre en place un système de test unitaire pour tester le code pour vérifier que rien ne soit cassé à chaque patch de l'application, ainsi qu'une intégration continue pour les automatiser. Cette procédure va permettre de ne pas oublier d'éléments lors de la mise en production et donc ainsi améliorer la qualité du produit. 
+
 ---------------------
 ##	**Les défense mise en place contre les attaques**
----------------------
+--------------------
 ### **La défense en profondeur**
 
 #### **DDOS Attack**
@@ -94,11 +95,7 @@ Permettront de maitriser les **requêtes silencieuses**. Elles permettent de dem
 Vu que l'application contiens des cours privé, que seul des personnes inscrit chez vous pourrons suivre. On va mettre en place un x-frame. Le but et de vous proteger des copie frauduleux de votre site par un iframe.
 On appelle ça du **Clickjacking**. leurs but de créer un site via ce fameux iframe qui est une fenetre dans un site qui pointe vers votre application. Il l'utilise pour cacher des bouton ou rajouter des bouton pour inciter les utilisateur a cliquer. Une fois fait, ça lancera un script qui provoqueront des actions qui ce feront à leurs insu. Pour les proteger, on mettra une options "X-Frame-Options: deny". Cela empechera la page d'être utiliser dans un iframe. Il sera possible de modifier ce parametre, si on s'apercoit lors de la mise en place de votre application qu'on a besoin de faire un iframe. On mettra un paramettre qui permetra seulement à votre domaine, ou une page bien précis l'autorisation d'utiliser un iframe.
 
-#### **Précaution d’usage des cookie**
-
-#### **Cloisonnement des web worker (on a pas ce point je crois part hachemi)**
-
-#### **sécurisation des API**
+-------------------------
 
 ### **L’entête sécurisé (CORS / TLS / HTTP / HTTPS)**
 
@@ -131,6 +128,8 @@ Prouve que les internautes communiquent avec le bon site Web.
 
 Force le site à n’interagir qu’avec un protocole HTTPS et bloque HTTP.
 
+-------------------
+
 ### **Le moindre privilège**
 
 Pour une meilleure sécurisation de votre application, nous allons appliquer le principe du moindre privilège. Cela fait référence à un concept de sécurité dans lequel on accorde à un utilisateur le niveau d’accès (ou les permissions) minimum requis pour accomplir son travail. Mais aussi qu'une fonction n'aura que les donnée et ressource nécessaire à son déroulement et rien d'autre.
@@ -140,6 +139,8 @@ On éliminera les privilèges d’administrateur local inutiles et s’assurer q
 Pour faciliter la mise en place des droits pour chaque utilisateur, nous allons appliquer la méthode **RBAC** (Role based Access Control).
 Nous allons créer des rôles avec des autorisations, droits. Pour faciliter la gestion des utilisateurs en compartimentant les accès donnés, que cette personne pourra atteindre. Ce qui fera une couche de sécurité sur les accès donnée. L'avantage supplémentaire est de gagner du temps par la suite, pour éviter de devoir attribuer des droits l'un après l'autre à chaque apprenant, formateur ou employer. Il suffira d'attribuer les rôles aux personnes qui pourront être modifiées.
 Ca optimisera l’efficacité opérationnelle, protègera les données des risques de fuite ou de vol, réduit le travail d’administration et d’assistance informatique.
+
+--------------------------
 
 ### **La politique RGPD**
 
@@ -154,6 +155,8 @@ Il a été conçu autour de 3 objectifs :
 
 Ainsi évité le vol de données en respectant toutes les recommandations citées ci-dessus.
 Ce qui incite la platefrome a mettre en place une stratégie de sécurité adaptée.
+
+-----------------------------
 
 ### **Stratégie de sauvegarde**
 
@@ -176,9 +179,14 @@ Il est nécessaire d’avoir un système de journalisation (c’est-à-dire un e
 - Assurer que les gestionnaires du dispositif de gestion des traces notifient, dans les plus brefs délais, toute anomalie ou tout incident de sécurité au responsable de traitement.
 - Notifier toute violation de données à caractére personnel à la CNIL et, sauf exception prévue par le RGPD, aux personnes concernées pour qu’elles puissent en limiter les conséquences
 
-
+------------------------------
 
 ###	**L’authentification**
 
+
 -------------------
 ## **Source**
+-------------------
+https://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf  
+
+https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/#:~:text=Privilégier%20l%27utilisation%20de%20l,fort%20de%20mots%20de%20passe.  
