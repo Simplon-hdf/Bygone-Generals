@@ -190,3 +190,12 @@ Il est nécessaire d’avoir un système de journalisation (c’est-à-dire un e
 https://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf  
 
 https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/#:~:text=Privilégier%20l%27utilisation%20de%20l,fort%20de%20mots%20de%20passe.  
+
+https://www.cnil.fr/fr/definition/cookie
+
+
+https://www.economie.gouv.fr/entreprises/reglement-general-sur-protection-des-donnees-rgpd
+
+
+https://www.associations.gouv.fr/IMG/pdf/fiche_pratique_rgpd.pdf
+
